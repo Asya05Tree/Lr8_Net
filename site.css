@@ -1,0 +1,75 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.table-responsive {
+    margin-top: 20px;
+}
+
+.thead-dark {
+    background-color: #343a40;
+    color: white;
+}
+
+.btn-info {
+    margin: 2px;
+}
+
+.card {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    background-color: #f8f9fa;
+}
+
+.dl-horizontal {
+    margin-bottom: 0;
+}
+
+.product-details {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.styled-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.product-item {
+    padding: 15px;
+    background-color: white;
+    border-radius: 6px;
+    border-left: 4px solid #007bff;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.product-item:hover {
+    transform: translateX(5px);
+    transition: transform 0.2s ease;
+}

@@ -1,0 +1,26 @@
+﻿@model Product
+
+<div class="container mt-4">
+    <div class="product-details">
+        <h3>Деталі товару</h3>
+
+        <ul class="styled-list">
+            <li class="product-item">
+                <span class="item-label">ID:</span> @Model.ID
+            </li>
+            <li class="product-item">
+                <span class="item-label">Назва:</span> @Model.Name
+            </li>
+            <li class="product-item">
+                <span class="item-label">Ціна:</span> @Model.Price.ToString("C")
+            </li>
+            <li class="product-item">
+                <span class="item-label">Дата додавання:</span> @Model.CreatedDate.ToString("dd/MM/yyyy")
+            </li>
+        </ul>
+
+        <div class="mt-3">
+            <a href="@Url.Action("List")" class="btn btn-primary">Назад до списку</a>
+        </div>
+    </div>
+</div>

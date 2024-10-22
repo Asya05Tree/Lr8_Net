@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Product>
+
+<div class="container mt-4">
+    <h2 class="mb-4">Товари зоомагазину</h2>
+
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Назва</th>
+                    <th>Ціна</th>
+                    <th>Дата додавання</th>
+                    <th>Дії</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var product in Model)
+                {
+                    <tr>
+                        <td>@product.ID</td>
+                        <td>@product.Name</td>
+                        <td>@product.Price.ToString("C")</td>
+                        <td>@product.CreatedDate.ToString("dd/MM/yyyy")</td>
+                        <td>
+                            <a href="@Url.Action("Details", new { id = product.ID })"
+                               class="btn btn-info btn-sm">Деталі</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
